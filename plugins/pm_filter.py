@@ -326,9 +326,7 @@ async def season_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
-	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
-        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
+        InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
     ])    
     
     if n_offset== '':
@@ -433,9 +431,8 @@ async def year_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
-	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
-        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
+       InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
+	
     ])    
     
     if n_offset== '':
@@ -539,9 +536,7 @@ async def quality_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
-	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
-        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}"),
+       InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
     ])    
     if n_offset== '':
         btn.append(
@@ -650,9 +645,7 @@ async def lang_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
-	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
-        InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
+       InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
     ])    
     if n_offset== '':
         btn.append(
@@ -819,7 +812,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                 InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                 ],[
-                InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                 InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1473,14 +1465,12 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
             ])
             btn.insert(1, [
-                InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
-                InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
-                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
+               InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
             ])            
         else:
             btn.insert(0,[
                 InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
-                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
+               InlineKeyboardButton("Group Link🔗", url=f"https://t.me/movies_corner7")
             ])
             btn.insert(1,[
                 InlineKeyboardButton("🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", user_id=ADMINS[0])
