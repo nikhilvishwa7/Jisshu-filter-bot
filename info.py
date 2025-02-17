@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '9544691'))
 API_HASH = environ.get('API_HASH', 'de2f2e633c293dcb0f73deebc364c306')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6618999138:AAH0-Bq6dF-FjwBSVUWRONEt5ZGnIgIX_Vw')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7906429514:AAF7swEDQplaFfPYAZVPVhN7-OwPwBBUPu4')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5846960534').split()]
@@ -31,9 +31,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001537820228'))  # set shortner log channel
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001606185333'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001537820228'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001606185333'))
 auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002317282663'))
 request_channel = environ.get('REQUEST_CHANNEL', '0') # If anyone sends a request message to your bot, you will get it in this channel.
